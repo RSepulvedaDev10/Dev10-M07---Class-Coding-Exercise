@@ -53,7 +53,6 @@ class Book:
     def close(self):
         print(f"Closing '{self.title}'")
 
-
 class Vehicle:
     def __init__(self, name, color, style, mileage, year):
         self.name = name
