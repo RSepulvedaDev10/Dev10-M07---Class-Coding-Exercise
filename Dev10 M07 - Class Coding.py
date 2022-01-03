@@ -23,7 +23,7 @@ class Animal:
         print(f"{self.name} is now nourished")
         
     def rest(self):
-        print(f"Resting...")
+        print(f"Resting")
         print(f"{self.name} is now rested")
 
 class Book:
@@ -93,13 +93,22 @@ a = Animal ('dog', 'mammal', 12)
 b = Book ('Harry Potter and the Sorcerers Stone', 'JK Rowling', 223, '6/26/1997')
 v = Vehicle ('Chrysler 300', 'red', 'sedan', 125000, '1/1/2015')
 
+
 a.showDescription()
+a.getName()
+a.setName('Cat')
 a.move()
+a.eat()
+a.rest()
 b.showDescription()
+b.getTitle()
+b.setTitle('Harry Potter and the Chamber of Secrets')
 b.open()
 b.read()
 b.close()
 v.showDescription()
+v.getName()
+v.setName('Chrysler 200')
 v.setColor('blue')
 v.showDescription()
 v.start()
