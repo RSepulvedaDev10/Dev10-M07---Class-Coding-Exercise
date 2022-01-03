@@ -7,6 +7,12 @@ class Animal:
     def showDescription(self):
         print(f"This animal is {self.name}, a type of {self.species}, and is {self.age} year(s) old.")
     
+    def getName(self):
+        return self.name
+    
+    def setName(self, name):
+        self.name = name
+    
     def move(self):
         print("Moving")
 
@@ -19,6 +25,12 @@ class Book:
         
     def showDescription(self):
         print(f"This book is titled {self.title}, which was written by {self.author} in {self.yearPublished}, and has {self.pages} pages in it.")
+        
+    def getTitle(self):
+            return self.title
+    
+    def setTitle(self, title):
+        self.title = title
     
     def open(self):
         print('Opening the book')
@@ -41,7 +53,13 @@ class Vehicle:
     def showDescription(self):
         print(f"This vehicle is a {self.name}, which is a {self.color} {self.style} made in {self.year}, and has a milage of {self.mileage}.")
         
-    def changeColor(self, color):
+    def getName(self):
+        return self.name
+    
+    def setName(self, name):
+        self.name = name
+        
+    def setColor(self, color):
         self.color = color
     
     def start(self):
@@ -68,7 +86,7 @@ b.open()
 b.read()
 b.close()
 v.showDescription()
-v.changeColor('blue')
+v.setColor('blue')
 v.showDescription()
 v.start()
 v.drive()
