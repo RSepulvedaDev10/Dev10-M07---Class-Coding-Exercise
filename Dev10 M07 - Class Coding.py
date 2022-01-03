@@ -5,7 +5,7 @@ class Animal:
         self.age = age
     
     def showDescription(self):
-        print(f"This animal is {self.name}, a type of {self.species}, and is {self.age} year(s) old.")
+        print(f"This animal is a {self.name}, a type of {self.species}, and is {self.age} year(s) old.")
     
     def getName(self):
         return self.name
@@ -14,7 +14,15 @@ class Animal:
         self.name = name
     
     def move(self):
-        print("Moving")
+        print(f"{self.name} is moving")
+        
+    def eat(self):
+        print(f"Eating")
+        print(f"{self.name} is now nourished")
+        
+    def rest(self):
+        print(f"Resting...")
+        print(f"{self.name} is now rested")
 
 class Book:
     def __init__(self, title, author, pages, yearPublished):
@@ -24,7 +32,7 @@ class Book:
         self.yearPublished = yearPublished
         
     def showDescription(self):
-        print(f"This book is titled {self.title}, which was written by {self.author} in {self.yearPublished}, and has {self.pages} pages in it.")
+        print(f"This book is titled '{self.title}', which was written by {self.author} in {self.yearPublished}, and has {self.pages} pages in it.")
         
     def getTitle(self):
             return self.title
@@ -33,13 +41,13 @@ class Book:
         self.title = title
     
     def open(self):
-        print('Opening the book')
+        print(f"Opening '{self.title}'")
         
     def read(self):
-        print('Reading the book')
+        print(f"Reading '{self.title}'")
         
     def close(self):
-        print('Closing the book')
+        print(f"Closing '{self.title}'")
 
 
 class Vehicle:
@@ -63,16 +71,16 @@ class Vehicle:
         self.color = color
     
     def start(self):
-        print('The vehicle has been started')
+        print(f"{self.name} has been started")
         
     def drive(self):
-        print('The vehicle is now in motion')
+        print(f"{self.name} is now in motion")
         
     def brake(self):
-        print('The vehicle has slowed down')
+        print(f"{self.name} has slowed down")
         
     def stop(self):
-        print('The vehicle has stopped')
+        print(f"{self.name} has stopped")
 
 
 a = Animal ('dog', 'mammal', 12)
