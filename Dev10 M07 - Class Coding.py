@@ -8,9 +8,11 @@ class Animal:
         print(f"This animal is a {self.name}, a type of {self.species}, and is {self.age} year(s) old.")
     
     def getName(self):
+        print(f"Getting name")
         return self.name
     
     def setName(self, name):
+        print(f"Setting name")
         self.name = name
     
     def move(self):
@@ -35,9 +37,11 @@ class Book:
         print(f"This book is titled '{self.title}', which was written by {self.author} in {self.yearPublished}, and has {self.pages} pages in it.")
         
     def getTitle(self):
-            return self.title
+        print(f"Getting title")
+        return self.title
     
     def setTitle(self, title):
+        print(f"Setting title")
         self.title = title
     
     def open(self):
@@ -62,12 +66,15 @@ class Vehicle:
         print(f"This vehicle is a {self.name}, which is a {self.color} {self.style} made in {self.year}, and has a milage of {self.mileage}.")
         
     def getName(self):
+        print(f"Getting name")
         return self.name
     
     def setName(self, name):
+        print(f"Setting name")
         self.name = name
         
     def setColor(self, color):
+        print(f"Changing color")
         self.color = color
     
     def start(self):
